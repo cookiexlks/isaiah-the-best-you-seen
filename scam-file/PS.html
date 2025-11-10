@@ -1,0 +1,44 @@
+%!PS
+/Helvetica-Bold findfont 24 scalefont setfont
+100 700 moveto
+(Welcome to My Page) show
+
+/Helvetica findfont 14 scalefont setfont
+100 660 moveto
+(This is a paragraph styled like HTML.) show
+
+showpage
+%!PS
+% Set up fonts
+/TitleFont /Helvetica-Bold findfont 24 scalefont def
+/BodyFont /Helvetica findfont 14 scalefont def
+/ListFont /Courier findfont 12 scalefont def
+/FooterFont /Helvetica-Oblique findfont 10 scalefont def
+
+% Draw title
+TitleFont setfont
+100 750 moveto
+(Welcome to My HTML-Inspired Page) show
+
+% Draw paragraph
+BodyFont setfont
+100 710 moveto
+(This page is written in PostScript to simulate HTML structure and styling.) show
+100 690 moveto
+(You can think of it as a visual translation of basic web elements.) show
+
+% Draw list
+ListFont setfont
+100 650 moveto
+(* Heading: <h1> becomes bold Helvetica) show
+100 630 moveto
+(* Paragraph: <p> becomes regular Helvetica) show
+100 610 moveto
+(* List: <ul> becomes Courier with bullets) show
+
+% Draw footer
+FooterFont setfont
+100 560 moveto
+(Page generated using PostScript logic, inspired by HTML layout.) show
+
+showpage
